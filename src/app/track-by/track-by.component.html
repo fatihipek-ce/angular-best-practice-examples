@@ -1,0 +1,16 @@
+<button (click)="guncelle()">Güncelle</button>
+<div>
+  <ul>
+  <li *ngFor="let item of test1">
+    {{item.id}} - {{item.name}}
+  </li>
+</ul>
+</div>
+
+<div>
+  <ul>
+  <li *ngFor="let item of test2; trackBy : trackByFn">
+    {{item.id}} - {{item.name}}
+  </li>
+</ul>
+</div>
